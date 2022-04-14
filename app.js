@@ -30,6 +30,13 @@ app.get('/', async(req, res) => {
   })
 });
 
+app.get('/photo/:id', async(req, res) => {
+  const photo = await Photo.findById(req.params.id)
+  res.render('photo',{
+    photo:photo
+  })
+});
+
 app.get('/add', (req, res) => {
     res.render('add')
   });
