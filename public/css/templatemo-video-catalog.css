@@ -16,7 +16,9 @@ body {
     line-height: 2em;
     overflow-x: hidden;
 }
-
+*{
+    word-wrap: break-word;
+}
 a {
     transition: all 0.3s ease;
     color: #666;
@@ -229,7 +231,7 @@ h2, p { color: #666666; }
     justify-content: center;
     background-color: rgba(0,0,0,0.4);
     cursor: pointer;
-    transition: all 0.3s ease: ;
+    transition: all 0.3s ease;
 }
 
 .tm-overlay-icon {
